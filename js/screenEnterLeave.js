@@ -43,7 +43,7 @@ function sevenScreenEnter() {
 	var aLi = oContactUl.getElementsByTagName('li');
 	var timer = null;
 	var iNow = 0;
-	timer = setInterval(function() {
+	timer = setInterval(function () {
 		if (iNow >= 2) {
 			clearInterval(timer);
 			window.onOff2 = true;
@@ -65,14 +65,14 @@ function sevenScreenLeave() {
 }
 
 //各组介绍,第二个参数为进入或离开
-function introduction(id,eorl){
-	var oScreenRightPart = document.getElementsByClassName(id+'RightPart')[0];
-	var oBlub = document.getElementsByClassName(id+'Blub')[0];
-	var oWenZi = document.getElementsByClassName(id+'WenZi')[0];
-	if ( eorl ) {
-		startMove2(oScreenRightPart,'right',5,0,false,function(){
-			startMove(oBlub,{'opacity':100},5,function(){
-				startMove(oWenZi,{'opacity':100},5,function(){
+function introduction(id, eorl) {
+	var oScreenRightPart = document.getElementsByClassName(id + 'RightPart')[0];
+	var oBlub = document.getElementsByClassName(id + 'Blub')[0];
+	var oWenZi = document.getElementsByClassName(id + 'WenZi')[0];
+	if (eorl) {
+		startMove2(oScreenRightPart, 'right', 5, 0, false, function () {
+			startMove(oBlub, { 'opacity': 100 }, 5, function () {
+				startMove(oWenZi, { 'opacity': 100 }, 5, function () {
 					window.onOff2 = true;
 				});
 			});
