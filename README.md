@@ -2,7 +2,7 @@
 > 文档分析：Claude Sonnet 4.5
 > 生成日期：2025-11-02
 
-翔工作室主页2015：https://www.atcumt.com/2015
+翔工作室主页2015：https://www.atcumt.com/atcumt-2015
 
 
 ## 项目简介
