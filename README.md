@@ -1,23 +1,13 @@
-# flyingstudio.github.io
+# atcumt-2015
 > 文档分析：Claude Sonnet 4.5
 > 生成日期：2025-11-02
 
-https://www.atcumt.com/2015
-翔工作室主页静态前端站点,（用于 GitHub Pages）
+翔工作室主页2015：https://www.atcumt.com/2015
+
 
 ## 项目简介
 
 这是一个基于静态文件的前端网站仓库，包含主页 `index.html` 及相关的资源目录（`css/`、`js/`、`img/`、`font/`、`video/`）,适合部署到 GitHub Pages 或任意静态站点托管服务。
-
-## 快速开始
-
-1. 克隆仓库并进入目录：
-   - git clone https://github.com/cumtflyingstudio/flyingstudio.github.io.git
-   - cd flyingstudio.github.io
-2. 本地预览（任意静态文件服务器）：
-   - Python 3: `python3 -m http.server 8000` 然后访问 http://localhost:8000
-   - 或使用 VS Code Live Server 等工具。
-3. 部署：将 `master` / `main` 分支推送到 GitHub，将仓库设置为 GitHub Pages 源（通常为 `gh-pages` 或 `master`/`main` 下的 `/` 或 `/docs`）。
 
 ## 项目架构
 
@@ -35,7 +25,7 @@ flyingstudio.github.io/
 ├── font/                 # 字体文件
 │   └── ebrimabd.ttf
 ├── img/                  # 图片资源（logo、封面、图标等）
-├── video/                # 视频资源 (1.ogv)
+├── video/                # 视频资源 (1.mp4)
 └── README.md             # 本文件
 ```
 
@@ -56,8 +46,7 @@ flyingstudio.github.io/
  - 图片与字体用于视觉展示和品牌标识，注意检查是否有未使用或重复资源以减小站点体积。
 
 #### `video/`
- - 存放媒体资源（例如 `1.ogv`），在网页中使用视频时请注意跨浏览器兼容性（考虑提供 MP4/WebM 格式备用）。
-
+ - 存放媒体资源（例如 `1.mp4`），在网页中使用视频时请注意跨浏览器兼容性.
 ### 工程化配置
 
 当前仓库为纯静态站点，未发现构建工具（如 npm、webpack、gulp 等）或 CI 配置（如 GitHub Actions）。如需自动化部署和压缩/打包，可考虑引入简单的 npm 脚本或 GitHub Actions。
