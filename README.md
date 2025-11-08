@@ -4,6 +4,7 @@
 > 生成日期：2025-11-02
 
 翔工作室主页 2015：https://www.atcumt.com/atcumt-2015
+```main```分支为源码备份，```release/2026```分支为后期修改发布版本。
 
 | ![](https://raw.githubusercontent.com/cumtflyingstudio/atcumt-pic/main/web/atcumt-2015-m.png) | ![](https://raw.githubusercontent.com/cumtflyingstudio/atcumt-pic/main/web/atcumt-2015-pc.png) |
 | :-------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: |
