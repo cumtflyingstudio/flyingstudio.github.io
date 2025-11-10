@@ -58,7 +58,7 @@ function addEvent(obj, evname, fn) {
 	if (obj.addEventListener) {
 		obj.addEventListener(evname, fn, false);
 	} else {
-		obj.attachEvent('on' + evname, function() {
+		obj.attachEvent('on' + evname, function () {
 			fn.call(obj);
 		});
 	}
@@ -69,7 +69,7 @@ function removeEvent(obj, evname, fn) {
 	if (obj.removeEventListener) {
 		obj.removeEventListener(evname, fn, false);
 	} else {
-		obj.detachEvent('on' + evname, function() {
+		obj.detachEvent('on' + evname, function () {
 			fn.call(obj);
 		});
 	}
@@ -88,7 +88,7 @@ function typeWriter(obj, text, endFn) {
 
 	clearInterval(obj.timer);
 
-	obj.timer = setInterval(function() {
+	obj.timer = setInterval(function () {
 		obj.innerHTML += arr[i++];
 		if (i >= arr.length) {
 			clearInterval(obj.timer);
@@ -98,9 +98,9 @@ function typeWriter(obj, text, endFn) {
 }
 
 //缓冲运动函数,ciShu这个参数值一般为0~10控制每次运动的多少
-function startMove(obj, json, ciShu,endFn) {
+function startMove(obj, json, ciShu, endFn) {
 	clearInterval(obj.timer);
-	obj.timer = setInterval(function() {
+	obj.timer = setInterval(function () {
 		var bStop = true;
 
 		for (var attr in json) {
@@ -134,12 +134,12 @@ function startMove(obj, json, ciShu,endFn) {
 }
 
 //匀速运动、加速运动函数
-function startMove2(obj, attr, dir, target, isLinear,endFn) {
+function startMove2(obj, attr, dir, target, isLinear, endFn) {
 	dir = parseInt(getStyle(obj, attr)) < target ? dir : -dir; //确定方向
 	clearInterval(obj.timer);
-	obj.timer = setInterval(function() {
+	obj.timer = setInterval(function () {
 
-		if( !isLinear ) {//不是匀速运动的话
+		if (!isLinear) {//不是匀速运动的话
 			dir > 0 ? dir += 5 : dir -= 5;//dir每次变化5px
 		}
 		var speed = parseInt(getStyle(obj, attr)) + dir; // 步长
